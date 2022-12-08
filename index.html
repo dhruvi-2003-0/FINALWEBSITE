@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="stylesheet" href="https://use.typekit.net/xdv4arn.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Mental Health Issues</title>
+</head>
+
+<body>
+  <header>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="others.html">Others</a>
+    </div>
+
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+    </div>
+    <h1 id="text">Mental Health Is <span style="color: red"><strike>not</strike></span> important</h1>
+    <a class="sec" href="#page-1"></a></br>
+  </header>
+  <div class="scroll-line"></div>
+  <section id="page-1">
+    <article class="what">
+
+      <div class="dropdown">
+  <span  class="slide-up show-on-scroll">What is it?</span>
+  <div class="dropdown-content">
+  <p class="para-style">Mental illnesses are conditions that affect emotion, thought, and behaviour (or a combination of these). Distress and/or difficulty coping with daily tasks at work, in the family, or in social situations are
+    symptoms of mental diseases.</p>
+  </div>
+</div>
+      <img class="slide-in show-on-scroll" src="images/illustration1.svg" alt="mental health illness illustration">
+      <a class="sec2" href="#page-2"></a></br>
+    </article>
+  </section>
+
+  <section id="page-2">
+    <article class="reasons">
+      <h3 class="slide-right show-on-scroll">Reasons</h3>
+      <img class="puff-in-center show-on-scroll" src="images/illustration21.png" alt="mental health illness illustration">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h1 class="inh">INHERITED QUALITIES</h1>
+          </div>
+          <div class="flip-card-back">
+            <p>People with mental illnesses are more likely to have biological relations who are similarly afflicted. Your life circumstances and certain genes may both enhance your chance of mental disease.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card-1">
+        <div class="flip-card-inner-1">
+          <div class="flip-card-front-1">
+            <h1 class="exp">Exposure to the environment before birth</h1>
+          </div>
+          <div class="flip-card-back-1">
+            <p>Sometimes, mental disease is associated to prenatal exposure to chemicals, alcohol, drugs, or environmental stresses, inflammatory disorders, or inflammatory conditions.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card-2">
+        <div class="flip-card-inner-2">
+          <div class="flip-card-front-2">
+            <h1 class="ment">Mental chemistry</h1>
+          </div>
+          <div class="flip-card-back-2">
+            <p>Neurotransmitters are bodily and naturally occurring substances in the brain that send signals to various regions of the body and the brain. The function of nerve receptors and nervous systems changes when the brain
+              networks involving these chemicals are compromised, which causes depression and other emotional problems.</p>
+          </div>
+        </div>
+      </div>
+      <a class="sec3" href="#page-3"></a><br>
+    </article>
+  </section>
+
+  <section id="page-3">
+    <article class="risk">
+      <div class="slideshow-container">
+        <h3 class="slide-up show-on-scroll">Risk Factors</h3>
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="images/gallery1.png" class="gallery1">
+  <div class="text">A history of mental illness in a blood relative, such as a parent or sibling</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="images/gallery22.png" class="gallery2">
+  <div class="text">Stressful life situations, such as financial problems, a loved one's death or a divorce</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="images/gallery333.png" class="gallery3">
+  <div class="text">An ongoing (chronic) medical condition, such as diabetes</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="images/gallery44.png" class="gallery4">
+  <div class="text">Traumatic experiences, such as military combat or assault</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="images/gallery55.png" class="gallery5">
+  <div class="text">Use of alcohol or recreational drugs</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    </article>
+  </section>
+  <script src="js/show-on-scroll.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/header.js"></script>
+</body>
+
+</html>
